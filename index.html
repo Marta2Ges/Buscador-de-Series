@@ -8,27 +8,33 @@
       href="https://fonts.googleapis.com/css?family=Sen&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
 
   <body>
     <section class="section-search">
       <h1 class="search-title">Buscador de series</h1>
-      <form>
+      <form class="js-form">
         <input
-          class="search-input"
+          class="js-input search-input"
           type="text"
-          placeholder="¿Qué serie buscas?"
+          placeholder="The 100"
         />
-        <button class="search-btn" type="button">Buscar</button>
+        <button class="js-btn search-btn" type="button" value="">Buscar</button>
       </form>
     </section>
     <main class="main">
       <section class="list-container">
-        <h2 class="title-section-list">Series:</h2>
-        <ul class="list"></ul>
+        <h2 class="title-section-list">Series buscadas:</h2>
+        <ul class="js-list list"></ul>
       </section>
-     
+      <aside class="favorites">
+        <div class="title-container">
+          <h2 class="title-section-list">Series favoritas</h2>
+        
+        <ul class="js-favorite-list"></ul>
+      </aside>
+    </main>
     <script type="text/javascript" src="./js/main.js"></script>
   </body>
 </html>
