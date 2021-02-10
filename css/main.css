@@ -13,11 +13,12 @@
 }
 
 .favorite {
-  background-color: green;
+  background-color: darkmagent;
   color: orange;
 }
 .js-input {
   color: green;
+  background-color: orange;
 }
 .list-container {
   padding: 40px;

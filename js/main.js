@@ -21,7 +21,6 @@ function getDataFromApi() {
       paintSeries(search);
     });
 }
-//Escuchamos al botón para que al clickarlo, llame a la función que coge los datos del Api
 
 //PREVENT
 function handleForm(ev) {
@@ -30,7 +29,7 @@ function handleForm(ev) {
 }
 formElement.addEventListener("submit", handleForm);
 
-//pintar datos iterando el array
+//pintar datos  array
 function paintSeries(series) {
   let htmlCode = "";
   const DefaultImage = "https://via.placeholder.com/210x295/ffffff/666666/?";
@@ -99,8 +98,6 @@ function handleMovie(ev) {
   paintFavorites(favorites);
 }
 
-//setInLocalStorage();
-//}
 //PINTAR FAVORITAS EN SU LISTA
 function paintFavorites(series) {
   let htmlCode = "";
@@ -128,7 +125,7 @@ function setInLocalStorage() {
   localStorage.setItem("favorites", stringfav);
 }
 
-// get information of favourite series from my local storage
+// Información en nuestro LS
 function getFromLocalStorage() {
   const localStorageFav = localStorage.getItem("favorites");
   if (localStorageFav !== null) {
