@@ -13,7 +13,7 @@ let favorites = [];
 
 function getDataFromApi() {
   const searchValue = inputElement.value;
-  fetch(`https://api.tvmaze.com/search/shows?q=${searchValue}`)
+  fetch(`//api.tvmaze.com/search/shows?q=${searchValue}`)
     .then((response) => response.json())
     .then((data) => {
       search = data;
